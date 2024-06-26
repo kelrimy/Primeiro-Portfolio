@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+DE+Grund:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap' rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Portfólio</title>
+    
+</head>
+<body>
+    <header class="header-container" id="home">
+        <div class="checkbox-container">
+            <input type="checkbox" id="toggle">
+            <label class="checkbox" for="toggle">            
+                <div class="trace"></div>
+                <div class="trace"></div>
+                <div class="trace"></div>
+            </label>
+            <nav class="menu-items">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Kelrimy Barros</h1>
+        <h2>Developer</h2>
+        <div class="social-media">
+            <a href="https://github.com/Kelrimy" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/kelrimy" target="_blank">LinkedIn</a>
+            <a href="mailto:kelrimymbb@gmail.com">Email</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-content">
+                <img src="foto.png" alt="Kelrimy Barros">
+                <p style="text-align: justify; text-indent: 40px;color: #000000;">Olá! Me chamo Kelrimy e sou estudante de Gestão de Tecnologia da Informação. Minha jornada na tecnologia começou há alguns anos com HTML para um blog pessoal, mas foi recentemente que decidi me dedicar aos estudos de algoritmos, o que me levou a aprender Python como minha primeira linguagem de programação. Obtive uma certificação pela USP em "Introdução à Ciência da Computação em Python" e desde então expandi meus conhecimentos para incluir HTML, CSS, SQL, Git, GitHub e AWS.</p>
+                <p style="text-align: justify; text-indent: 40px;color: #000000;">Estou aprimorando meu inglês e tenho um nível intermediário de francês, o que me permite acessar uma ampla gama de recursos e trabalhar em ambientes multiculturais. Apesar de não ter experiência prática em desenvolvimento, estou constantemente melhorando minhas habilidades por meio de projetos pessoais como este. Sou comunicativa, resiliente, organizada e proativa, características essenciais para colaborar efetivamente e enfrentar desafios. Acredito que o desenvolvimento pessoal e profissional é um processo contínuo. Estou sempre em busca de novos desafios que me permitam contribuir de forma significativa para o campo da tecnologia.
+                </p>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h2 style="color: #20011b;">Projetos Anteriores</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-wrapper">
+                        <h2 style="color: #000000;">Cadastro de Produto</h2>
+                        <p style="text-align: justify; text-indent: 40px;color: #000000;">Cadastro e Listagem de Produtos em Python. Este é um programa simples em Python para cadastro e listagem de produtos. Ele permite que o usuário insira informações sobre novos produtos, como nome, descrição, valor e disponibilidade para venda. Além disso, oferece a funcionalidade de listar os produtos cadastrados.</p>
+                        <a href="https://github.com/kelrimy/CadastroDeProduto" target="_blank">Vem ver!</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper">
+                        <h2 style="color: #000000;">Jogo NIM</h2>
+                        <p style="text-align: justify; text-indent: 40px; color: #000000;"> . </p>
+                        <p style="text-align: justify; text-indent: 40px; color: #000000;"> . </p>
+                        <p style="text-align: justify; text-indent: 40px; color: #000000;">Jogo NIM em Python. Este é um programa Python que implementa o jogo NIM, um jogo matemático de estratégia para dois jogadores. No jogo NIM, os jogadores alternam suas jogadas, removendo um número variável de peças de acordo com o limite estipulado por rodada. O jogador que remover a última peça é o vencedor.</p>
+                        <a href="https://github.com/kelrimy/JogoNim" target="_blank">Vem ver!</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper">
+                        <h2 style="color: #000000;">Sistema Bancário</h2>
+                        <p style="text-align: justify; text-indent: 40px;color: #000000;">Este repositório contém duas implementações de um sistema bancário em Python. Incluem as seguintes funcionalidades: Depositar valores positivos; sacar valores, com um limite de R$ 500,00 por saque e um máximo de 3 saques diários e exibir o extrato das transações. A implementação mais avançada inclui funcionalidades adicionais, como o uso de uma classe para modelar a conta bancária.</p>
+                        <a href="https://github.com/kelrimy/sistema-bancario" target="_blank">Vem ver!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Feito por Kelrimy Barros </p>
+ 
+    </footer>
+
+    <script>
+        document.querySelectorAll('.menu-items a').forEach(item => {
+            item.addEventListener('click', () => {
+                document.getElementById('toggle').checked = false;
+            });
+        });
+    </script>
+</body>
+</html>
